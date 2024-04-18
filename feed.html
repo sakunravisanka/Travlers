@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback
+  </title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <script src="js/script.js" defer></script>
+  <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+body{
+    background: url('./com.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;    
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+
+
+.header .navbar a {
+  font-size: 1rem;
+  color: #aaa;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+  color: #29d9d5;
+}
+
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.navbar{
+  font-size: 15px;
+}
+.logo i {
+  color: #29d9d5;
+  padding-right: .5rem;
+}
+.comment-box{
+  width: 50%;
+  border: 1px solid #ccc;
+  margin: 30px 0;
+  padding: 10px 10px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+  margin-left: 150px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+}
+
+.comment-box p{
+  text-align: center;
+  font-size: 30px;
+  color: #106BA3;
+}
+
+.comment-form input, .comment-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #000;
+  color:#000;
+ 
+}
+
+.comment-form button{
+  margin: 10px 0;
+  border: none;
+  background-color: #91A8B3;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  color: #444;
+}
+.button:hover{
+  color:#52A7B1;
+  background-color: #12428B;
+}
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  background-color: #1E1F1F;
+}
+
+.footer .box-container .box {
+  padding: 0.1rem;
+}
+
+.footer .box-container .box .logo {
+  padding-bottom: 1rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.0rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.footer .box-container .box p i {
+  padding-right: .3rem;
+  color: #29d9d5;
+}
+
+
+.footer .box-container .box .links {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box .links:hover {
+  color: #29d9d5;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .links i {
+  padding-right: .5rem;
+  color: #29d9d5;
+}
+
+  </style>
+</head>
+<body bgcolor="black">
+
+  <header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
+
+    <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="register.html">Register</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="feed.html">feedback</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="AllRecords.php">Other Feedback</a>
+    </nav>
+
+
+
+</header>
+
+
+    <div class="comment-box"data-aos="zoom-in-up" data-aos-delay="600">
+        <p>Feedback</p>
+        <form class="comment-form" method="post" action="send.php">
+            <input type="Name" name="name" placeholder="Name">
+            <textarea rows="10" name="message" placeholder="message"></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <section class="footer">
+
+      <div class="box-container">
+  
+          <div class="box" data-aos="fade-up" data-aos-delay="150">
+              <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
+              <p>Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip  </p>
+              <div class="share">
+              </div>
+          </div>
+  
+          <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>quick links</h3>
+              <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+              <a href="register.html" class="links"> <i class="fas fa-arrow-right"></i> Register </a>
+              <a href="feed.html" class="links"> <i class="fas fa-arrow-right"></i> Feedback </a>
+              <a href="AllRecords.php" class="links"> <i class="fas fa-arrow-right"></i> Other Feedback </a>
+          </div>
+  
+          <div class="box" data-aos="fade-up" data-aos-delay="450">
+              <h3>contact info</h3>
+              <p> <i class="fas fa-map"></i> Sri Lanka,Anuradhapura </p>
+              <p> <i class="fas fa-phone"></i> 0789619294 </p>
+              <p> <i class="fas fa-envelope"></i> sakunravisanka1@gmail.com </p>
+          </div>
+  
+      </div>
+  
+  </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+    AOS.init({
+        duration: 800,
+        offset:150,
+    });
+
+</script>
+</body>
+</html>

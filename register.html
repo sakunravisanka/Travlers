@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+
+  <link rel="stylesheet" href="style4.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+  <header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
+
+    <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="register/register.html">Register</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="feed.html">feedback</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="AllRecords.php">Other Feedback</a>
+    </nav>
+
+
+
+</header>
+  
+  <div class="container">
+    <h1>Registration</h1>
+  </div>
+  <div class="panel-body">
+    <form action="connect.php" method="post" class="border" data-aos="zoom-in-up" data-aos-delay="600">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          name="firstName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          name="lastName"
+        />
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <div>
+          <label for="male" class="radio-inline"
+            ><input
+              type="radio"
+              name="gender"
+              value="m"
+              id="male"
+            />Male</label
+          >
+          <label for="female" class="radio-inline"
+            ><input
+              type="radio"
+              name="gender"
+              value="f"
+              id="female"
+            />Female</label
+          
+
+          >
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          name="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="number">Phone Number</label>
+        <input
+          type="number"
+          class="form-control"
+          id="number"
+          name="number"
+        />
+      </div>
+      <input type="submit" class="buton">
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
+          <p>Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip  </p>
+          <div class="share">
+          </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <h3>quick links</h3>
+          <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+          <a href="register.html" class="links"> <i class="fas fa-arrow-right"></i> Register </a>
+          <a href="feed.html" class="links"> <i class="fas fa-arrow-right"></i> Feedback </a>
+          <a href="AllRecords.php" class="links"> <i class="fas fa-arrow-right"></i> Other Feedback </a>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-map"></i> Sri Lanka,Anuradhapura </p>
+          <p> <i class="fas fa-phone"></i> 0789619294 </p>
+          <p> <i class="fas fa-envelope"></i> sakunravisanka1@gmail.com </p>
+      </div>
+
+  </div>
+
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+  AOS.init({
+      duration: 800,
+      offset:150,
+  });
+
+</script>
+</body>
+</html>

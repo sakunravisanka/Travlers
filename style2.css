@@ -1,0 +1,39 @@
+.comment-box{
+  width: 50%;
+  border: 1px solid #ccc;
+  margin: 30px 0;
+  padding: 10px 10px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+  margin-left: 150px;
+  margin-top: 80px;
+  box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+}
+
+.comment-box p{
+  text-align: left;
+  font-size: 30px;
+  color: #2D80C3;
+}
+
+.comment-form input, .comment-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #000;
+  color:#000;
+}
+
+.comment-form button{
+  margin: 10px 0;
+  border: none;
+  background-color: #91A8B3;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  color: #444;
+}  
